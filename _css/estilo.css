@@ -22,14 +22,33 @@ p {
 header#cabecalho img#icone {
     position: absolute;
     left: 70%;
-    top: 50px;
+    top: 70px;
 }
 
 header#cabecalho {
-
+    border-bottom: 1px #888 solid; /* original color #606060 */
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
 }
 
-/* Formatação de imagens com legendas */
+header#cabecalho h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: Arial, sans-serif;
+    color: #888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+/* Formatação de imagens com legendas - Formatting images with captions */
 
 figure.foto-legenda {
     position: relative;
@@ -43,7 +62,7 @@ figure.foto-legenda img {
 }
 
 figure.foto-legenda figcaption {
-    opacity: 0; /* Criar um hover para mudar opacidade */
+    opacity: 0; /* Create a hover to change opacity */
     position: absolute;
     top: 0px;
     background-color: rgba(0, 0, 0, .4);
@@ -59,7 +78,7 @@ figure.foto-legenda:hover figcaption {
     opacity: 1;
 }
 
-/*Formatação do Menu */
+/*Formatação do Menu - Menu Formatting */
 
 nav#menu {
     display: block;
@@ -70,7 +89,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 230px;
+    left: 400px; /* original value 330px */
 }
 
 nav#menu li {
